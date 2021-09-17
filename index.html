@@ -15,6 +15,33 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modal-Login-Titulo"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-Login-Titulo">Entre Na Sua Conta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="login-Email">E-mail</label>
+                            <input type="email" class="form-control" id="login-Email">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="login-Senha">Senha</label>
+                            <input type="password" class="form-control" id="login-Senha">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-3 mx-auto d-block" style="width: 140px">Login</button>
+                        <div class="form-text text-muted text-end">Esqueceu a senha? <a href="#">Clique aqui</a>.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Modal -->
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3 box-shadow">
@@ -49,7 +76,7 @@
                         </li>
 
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link" data-bs-toggle="modal" href="#modalLogin">Login</a>
                         </li>
 
                         <li class="nav-item">
@@ -311,9 +338,12 @@
                     <div class="col-md-2">
                         <h4 class="h6">REDES SOCIAIS</h4>
                         <ul class="list-unstyled">
-                            <li><a class="btn btn-outline-info btn-sm btn-block mb-2 change-color-face" href="https://www.facebook.com/thegladston" style="width: 140px;">Facebook</a></li>
-                            <li><a class="btn btn-outline-info btn-sm btn-block mb-2 change-color" href="https://twitter.com/thegladston" style="width: 140px;">Twitter</a></li>
-                            <li><a class="btn btn-outline-info btn-sm btn-block mb-2 change-color-yt" href="https://www.youtube.com" style="width: 140px;">Youtube</a></li>
+                            <li><a class="btn btn-outline-info btn-sm btn-block mb-2 change-color-face"
+                                    href="https://www.facebook.com/thegladston" style="width: 140px;">Facebook</a></li>
+                            <li><a class="btn btn-outline-info btn-sm btn-block mb-2 change-color"
+                                    href="https://twitter.com/thegladston" style="width: 140px;">Twitter</a></li>
+                            <li><a class="btn btn-outline-info btn-sm btn-block mb-2 change-color-yt"
+                                    href="https://www.youtube.com" style="width: 140px;">Youtube</a></li>
                         </ul>
                     </div>
                 </div>
