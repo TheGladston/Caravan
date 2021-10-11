@@ -1,0 +1,70 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+body {
+    padding-top: 74px;
+}
+
+.box-shadow {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05),
+                0 4px 8px 0 rgba(0,0,0,.05);
+}
+
+#home-quote {
+    background: url(../images/bg-quote.jpg) center center;
+    background-size: cover;
+}
+
+@media (max-width: 767px) {
+    #home-quote .display-4 {
+        font-size: 2.5rem;
+    }
+
+    body {
+        padding-top: 0px;
+    }
+
+    .fixed-top {
+        position: relative;
+    }
+}
+
+.pergunta p a {
+    text-decoration: none;
+}
+
+.change-color-face {
+    color: whitesmoke;
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none; 
+}
+
+.change-color {
+    color: whitesmoke;
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+}
+
+.change-color-yt {
+    color: whitesmoke;
+    background: #ED213A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+}
+
+.lista-plano li {
+    
+    padding: 1rem;
+}
+
+.lista-plano li + li {
+    border-top: 1px solid rgba(0,0,0,.2);
+}
+
+.container {
+    width: 80% !important;
+}

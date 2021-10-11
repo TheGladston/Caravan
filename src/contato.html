@@ -1,0 +1,273 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caravan</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <script type="text/javascript" src="../assets/js/popper.min.js" defer></script>
+    <script type="text/javascript" src="../assets/js/bootstrap.js" defer></script>
+    <script type="text/javascript" src="../assets/js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modal-Login-Titulo"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-Login-Titulo">Entre Na Sua Conta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="login-Email">E-mail</label>
+                            <input type="email" class="form-control" id="login-Email">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="login-Senha">Senha</label>
+                            <input type="password" class="form-control" id="login-Senha">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-3 mx-auto d-block"
+                            style="width: 140px">Login</button>
+                        <div class="form-text text-muted text-end">Esqueceu a senha? <a href="#">Clique aqui</a>.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Modal -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3 box-shadow">
+            <div class="container-fluid">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../assets/images/caravan.svg" alt="Caravan">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Locais</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="local.html">Califórnia</a></li>
+                                <li><a class="dropdown-item" href="local.html">Paris</a></li>
+                                <li><a class="dropdown-item" href="local.html">Dublin</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="planos.html">Planos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contato.html">Contato</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link" data-bs-toggle="modal" href="#modalLogin">Login</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary ms-lg-2" href="../src/inscricao.html">Inscreva-se</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="my-5 text-center">
+                <span class="h6 d-block">POSSUI ALGUMA DÚVIDA?</span>
+                <h1 class="display-4 text-primary">Fale Conosco</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-lg mb-5">
+                    <form class="bg-light rounded p-4 box-shadow" action="">
+                        <div class="form-group mb-3">
+                            <label for="clienteNome">Nome</label>
+                            <input type="text" class="form-control" id="clienteNome">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="clienteEmail">Email</label>
+                            <input type="email" class="form-control" id="clienteEmail">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="clienteMensagem">Mensagem</label>
+                            <textarea id="clienteMensagem" class="form-control" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+
+                <div class="col-lg">
+                    <h2 class="h6">NOSSO ENDEREÇO</h2>
+                    <a href="#"><img class="img-fluid box-shadow rounded mb-4" src="../assets/images/mapa.png" alt="Endereço da Empresa"></a>
+
+                    <h2 class="h6">DADOS DE CONTATO</h2>
+                    <ul class="list-unstyled text-secondary">
+                        <li>caravan@caravan.com.br</li>
+                        <li>(61) 99999-9999</li>
+                        <li>De Seg. à Sex. das 8h às 18h</li>
+                    </ul>
+                    
+                    <h2 class="h6 mt-4">REDES SOCIAIS</h2>
+                    
+                    <ul class="list-unstyled">
+                        <div class="d-flex">
+                            <li><a class="text-primary me-2" href="https://www.facebook.com/thegladston"><i class="fab fa-facebook-square" style="font-size: 2.3rem;"></i></a></li>
+                            <li><a class="text-info me-2" href="https://twitter.com/thegladston"><i class="fab fa-twitter-square" style="font-size: 2.3rem;"></i></a></li>
+                            <li><a class="text-danger" href="https://www.youtube.com"><i class="fab fa-youtube-square" style="font-size: 2.3rem;"></i></a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="my-5 text-center">
+                <span class="h6 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
+                <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6" id="perguntasFrequentes" data-b>
+                    <div class="pergunta py-2">
+                        <p>
+                            <a class="lead" data-bs-toggle="collapse" href="#pergunta1" role="tabpanel"
+                                aria-expanded="false" aria-controls="pergunta1">→ É possível cancelar a viagem?</a>
+                        </p>
+                        <div class="collapse" id="pergunta1" data-parent>
+                            <div class="card card-body">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                    </div>
+
+                    <div class="pergunta py-2">
+                        <p>
+                            <a class="lead" data-bs-toggle="collapse" href="#pergunta2" role="tabpanel"
+                                aria-expanded="false" aria-controls="pergunta2">→ Qual a garantia que tenho se perder o
+                                voo?</a>
+                        </p>
+                        <div class="collapse" id="pergunta2">
+                            <div class="card card-body">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                    <div class="pergunta py-2">
+                        <p>
+                            <a class="lead" data-bs-toggle="collapse" href="#pergunta3" role="tabpanel"
+                                aria-expanded="false" aria-controls="pergunta3">→ Qual a principal forma de viagem?</a>
+                        </p>
+                        <div class="collapse" id="pergunta3">
+                            <div class="card card-body">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                    </div>
+
+                    <div class="pergunta py-2">
+                        <p>
+                            <a class="lead" data-bs-toggle="collapse" href="#pergunta4" role="tabpanel"
+                                aria-expanded="false" aria-controls="pergunta4">→ Qual o melhor destino de viagem?</a>
+                        </p>
+                        <div class="collapse" id="pergunta4">
+                            <div class="card card-body">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                    </div>
+
+                    <div class="pergunta py-2">
+                        <p>
+                            <a class="lead" data-bs-toggle="collapse" href="#pergunta5" role="tabpanel"
+                                aria-expanded="false" aria-controls="pergunta5">→ Vocês dão descontos para grupos
+                                grandes?</a>
+                        </p>
+                        <div class="collapse" id="pergunta5">
+                            <div class="card card-body">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">PÁGINAS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="./src/planos.html">Planos</a></li>
+                        <li><a href="./src/contatos.html">Contato</a></li>
+                        <li><a href="./src/inscricao.html">Inscreva-se</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">LOCAIS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="./src/local.html">Califórnia</a></li>
+                        <li><a href="./src/local.html">Paris</a></li>
+                        <li><a href="./src/local.html">Dublin</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h4 class="h6">DADOS DE CONTATO</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li>caravan@caravan.com.br</li>
+                        <li>(61) 99999-9999</li>
+                        <li>De Seg. à Sex. das 8h às 18h</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <h4 class="h6">REDES SOCIAIS</h4>
+                    <ul class="list-unstyled">
+                        <div class="d-flex">
+                            <li><a class="text-light me-2" href="https://www.facebook.com/thegladston"><i class="fab fa-facebook-square" style="font-size: 2.3rem;"></i></a></li>
+                            <li><a class="text-light me-2" href="https://twitter.com/thegladston"><i class="fab fa-twitter-square" style="font-size: 2.3rem;"></i></a></li>
+                            <li><a class="text-light" href="https://www.youtube.com"><i class="fab fa-youtube-square" style="font-size: 2.3rem;"></i></a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary text-center py-3">
+            <p class="mb-0">Caravan © 2021. Alguns direitos reservados. (maybe)</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
